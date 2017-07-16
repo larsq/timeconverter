@@ -42,12 +42,12 @@ public class ConverterController {
 
     public void setUTCTz() {
         zoneId = ZoneId.of("UTC");
-        updateTimestampFromDate(null, dateText.getText());
+        updateDateFromTimestamp(null, timestampText.getText());
     }
 
     public void setCurrentTz() {
         zoneId = ZoneId.systemDefault();
-        updateTimestampFromDate(null, dateText.getText());
+        updateDateFromTimestamp(null, timestampText.getText());
     }
 
     @FXML
